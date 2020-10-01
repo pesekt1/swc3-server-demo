@@ -23,7 +23,8 @@ public class TutorialController {
     public ResponseEntity<List<Tutorial>> getAllTutorials(){
         try {
             List<Tutorial> tutorials = new ArrayList<>();
-            tutorials.addAll(tutorialRepository.findAll());
+            List<Tutorial> allRows = tutorialRepository.findAll();
+            tutorials.addAll(allRows);
             return new ResponseEntity<>(tutorials, HttpStatus.OK);
 
         }catch (Exception e){
