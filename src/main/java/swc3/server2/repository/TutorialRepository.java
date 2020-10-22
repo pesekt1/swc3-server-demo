@@ -6,6 +6,6 @@ import swc3.server2.model.Tutorial;
 import java.util.List;
 
 public interface TutorialRepository extends JpaRepository<Tutorial, Long> {
-    List<Tutorial> findByTitle(String title);
+    List<Tutorial> findByTitleContaining(String title);
     List<Tutorial> findByPublished(boolean published);
 }

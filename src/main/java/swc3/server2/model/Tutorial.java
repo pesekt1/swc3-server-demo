@@ -46,4 +46,16 @@ public class Tutorial {
     public boolean isPublished() {
         return published;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setPublished(boolean published) {
+        this.published = published;
+    }
 }
