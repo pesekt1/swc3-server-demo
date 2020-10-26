@@ -8,9 +8,7 @@ import swc3.server2.exception.ResourceNotFoundException;
 import swc3.server2.model.Tutorial;
 import swc3.server2.repository.TutorialRepository;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api2")
