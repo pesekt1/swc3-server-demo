@@ -133,6 +133,7 @@ public class Customer {
         return true;
     }
 
+
     @Override
     public int hashCode() {
         int result = customerId;
