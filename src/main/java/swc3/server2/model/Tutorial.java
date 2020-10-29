@@ -7,16 +7,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "tutorials", schema = "swc3_db2")
 public class Tutorial {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name="native", strategy = "native")
     private long id;
-    @Column(name = "title", nullable = false)
     private String title;
-    @Column(name = "description")
     private String description;
-    @Column(name = "published")
     private boolean published;
 
     public Tutorial() {
@@ -28,13 +21,9 @@ public class Tutorial {
         this.published = published;
     }
 
-//    @Basic
-//    @Column(name = "published", nullable = true)
-//    public Boolean getPublished() {
-//        return published;
-//    }
-
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name="native", strategy = "native")
     @Column(name = "id", nullable = false)
     public long getId() {
         return id;
@@ -66,10 +55,6 @@ public class Tutorial {
 
     public boolean isPublished() {
         return published;
-    }
-
-    public void setPublished(Boolean published) {
-        this.published = published;
     }
 
     public void setPublished(boolean published) {
