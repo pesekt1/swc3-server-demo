@@ -1,4 +1,4 @@
-package swc3.server2.controller;
+package swc3.server2.controller.tutorials;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

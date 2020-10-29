@@ -1,4 +1,4 @@
-package swc3.server2.controller;
+package swc3.server2.controller.tutorials;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
