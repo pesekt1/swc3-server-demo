@@ -16,7 +16,7 @@ public class Customer {
     private Date birthDate;
     private String phone;
     private String address;
-    private String city;
+    private String city;//
     private String state;
     private int points;
     private Collection<Order> ordersByCustomerId;
